@@ -34,7 +34,7 @@ export class AccountController {
       res.status(201).json({ message: 'Account created successfully', account });
     } catch (error) {
       res.status(500).json({ message: 'Server error', error });
-    }
+    } 
   };
 
   static getAccounts = async (req: Request, res: Response) => {
